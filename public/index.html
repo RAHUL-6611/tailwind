@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="stylesheet" href="./style.css" />
     <title>Landing Page</title>
 </head>
-<body>
+<body class="font-Poppins">
     <!-- Header -->
     <header>
-        <nav class="container">
-            <h1>
-                Parmaras
-            </h1>
+        <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+            <div class="py-1  mx-40"><img src="./imgs/logo-bookmark.svg" alt="" /></div>
+
+            <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs  mx-40">
+                <li class="cursor-pointer">Features</li>
+                <li class="cursor-pointer">Pricing</li>
+                <li class="cursor-pointer">Contact</li>
+                <!-- <li  class="cursor-pointer">SignIn</li> -->
+                <button class="bg-red-600 text-white px-7 py-3 uppercase rounded-md">Login</button>
+                <!-- <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase">Login</button> -->
+            </ul>
+            <div class="flex sm:hidden flex-1 justify-end">
+                <i class="text-2xl fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 </body>
